@@ -202,8 +202,7 @@ modUI <- function(id){
   ns <- NS(id)
   sidebarLayout(
     sidebarPanel(
-      downloadButton(ns("download_as_png"),"download as png"),
-      actionButton(ns("go"),"go")
+      downloadButton(ns("download_as_png"),"download as png")
     ),
     mainPanel(
       dygraphOutput(ns("p1"))
@@ -233,7 +232,7 @@ mod <- function(input,output,session){
   
   output$download_as_png <- downloadHandler(
     filename = function() {
-      "trucbidul.png"
+      "dessin.png"
     },
     
     content = function(file) {
